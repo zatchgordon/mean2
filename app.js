@@ -1,8 +1,11 @@
 var express = require("express");
 var app = express();
+var routes = require("./server/routes")
+
+app.set("port", 3001);
 
 app.use(function (req, res, next) {
-
+    console.log(req.method, req.url);
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
 
@@ -19,29 +22,11 @@ app.use(function (req, res, next) {
     // Pass to next layer of middleware
     next();
 });
-app.set("port", 3001);
-
+app.use("/api", routes);
 // Add headers
 var server = app.listen(app.get("port"), appStarted);
-
-
-app.get('/api/heroes', function (req, res) {
-    var result = [
-        { id: 11, name: 'Mr. Zac' },
-        { id: 12, name: 'Narco' },
-        { id: 13, name: 'Bombasto' },
-        { id: 14, name: 'Celeritas' },
-        { id: 15, name: 'Magneta' },
-        { id: 16, name: 'RubberMan' },
-        { id: 17, name: 'Dynama' },
-        { id: 18, name: 'Dr IQ' },
-        { id: 19, name: 'Magma' },
-        { id: 20, name: 'Tornado' }
-    ];
-    res.contentType('application/json');
-    res.send(JSON.stringify(result));
-});
 function appStarted() {
     var port = server.address().port;
     console.log("magic happens on port " + port);
 }
+
