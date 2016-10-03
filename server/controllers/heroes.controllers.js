@@ -5,7 +5,7 @@ module.exports = {
 
 var heroes = [
         { id: 11, name: 'Mr. Zac' },
-        { id: 12, name: 'Narco' },
+        { id: 12, name: 'Polo' },
         { id: 13, name: 'Bombasto' },
         { id: 14, name: 'Celeritas' },
         { id: 15, name: 'Magneta' },

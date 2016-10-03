@@ -1,0 +1,14 @@
+{
+    "ignore": [
+        "app/*",
+        "typings/*",
+        "index.html",
+        "*.css",
+        "*.json",
+        "README.md",
+        "LICENSE",
+        "systemjs.config.js",
+        ".gitignore"
+    ],
+    "verbose": true
+}
