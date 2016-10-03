@@ -27,7 +27,7 @@ var server = app.listen(app.get("port"), appStarted);
 
 app.get('/api/heroes', function (req, res) {
     var result = [
-        { id: 11, name: 'Mr. Nice' },
+        { id: 11, name: 'Mr. Zac' },
         { id: 12, name: 'Narco' },
         { id: 13, name: 'Bombasto' },
         { id: 14, name: 'Celeritas' },
