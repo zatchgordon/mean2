@@ -1,5 +1,5 @@
 
-## 1 install mongo
+## 1: install mongo
 ###windows: 
     open cmd prompt
     run powershel: powershell
@@ -13,12 +13,12 @@
     ??install ruby??: brew install ruby
     install mongodb: brew install mongodb
 
-## 2 make sure mongodb is running
+## 2: make sure mongodb is running
     mongod --dbpath /path/to/folder/as/database
-## 3 open new cmd/terminal    
-## 4 make sure the current directory is /mean2
+## 3: open new cmd/terminal    
+## 4: make sure the current directory is /mean2
 
-## 5 import data
+## 5: import data
 ##import:
 `mongoimport --db tourOfHeroes --collection heroes --jsonArray "server/heroes.json"`
 #### or if there is dumped data
