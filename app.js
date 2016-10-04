@@ -5,9 +5,13 @@ var routes = require("./server/routes")
 app.set("port", 3001);
 
 app.use(function (req, res, next) {
+
     console.log(req.method, req.url);
-    // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+    var allowedOrigins = ['http://localhost:3000', 'http://localhost:8080'];
+    var origin = req.headers.origin;
+    if (allowedOrigins.indexOf(origin) > -1) {
+        res.setHeader('Access-Control-Allow-Origin', origin);
+    }
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -29,4 +33,3 @@ function appStarted() {
     var port = server.address().port;
     console.log("magic happens on port " + port);
 }
-

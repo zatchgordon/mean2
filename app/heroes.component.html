@@ -1,14 +1,35 @@
-<h2>My Heroes</h2>
-  <ul class="heroes">
-    <li *ngFor="let hero of heroes"
-      [class.selected]="hero === selectedHero"
-      (click)="onSelect(hero)">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </li>
-  </ul>
-  <div *ngIf="selectedHero">
-  <h2>
-    {{selectedHero.name | uppercase}} is my hero
-  </h2>
-  <button (click)="gotoDetail()">View Details</button>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h3>My Heroes</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <div class="input-group hero" *ngFor="let hero of heroes" [class.selected]="hero === selectedHero">
+            <div class="input-group-addon heroId" (click)="onSelect(hero)">{{hero.id}}</div>
+            <p class="form-control-static heroName" (click)="onSelect(hero)">{{hero.name}}</p>
+            <div class="input-group-addon heroDelete">Delete</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6" *ngIf="selectedHero">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h3>Selected Hero</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2>
+          {{selectedHero.name | uppercase}} is my hero
+        </h2>
+        <button (click)="gotoDetail()" class="btn btn-primary">View Details</button>
+      </div>
+    </div>
+  </div>
 </div>
