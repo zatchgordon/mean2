@@ -4,7 +4,7 @@
   "description": "Mean stack with angular 2",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && concurrently 'tsc -w' 'lite-server' 'nodemon app.js' ",
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" \"nodemon app.js\" ",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
