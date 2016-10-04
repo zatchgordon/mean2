@@ -1,13 +1,14 @@
 
 #install mongo
 ##windows: 
-    cmd: run powershell (at least v3)
+    open cmd prompt
+    run powershel: powershell
     install scoop: iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
-    allow commans: set-executionpolicy unrestricted -s cu
+    allow permissions: set-executionpolicy unrestricted -s cu
     install mongo: scoop install mongodb
     close and reopen cmd prompt
 ## mac: 
-    terminal: 
+    open terminal
     install homebrew: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     ??install ruby??: brew install ruby
     install mongodb: brew install mongodb
@@ -17,10 +18,10 @@
 # open new cmd/terminal    
 # make sure the current directory is /mean2
 
-import
+####import
 mongoimport --db tourOfHeroes --collection heroes --jsonArray "server/heroes.json" 
 mongoimport --db tourOfHeroes --collection heroes --jsonArray "dump/heroes.json" 
 
-export
+####export
 mongoexport --db tourOfHeroes --collection heroes --jsonArray --pretty --out dump/heroes.json
 
