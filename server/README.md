@@ -10,6 +10,8 @@
 ### mac: 
     open terminal
     install homebrew: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    ensure homebrew was installed: brew doctor
+    (should return "your system is ready to brew)
     ??install ruby??: brew install ruby
     install mongodb: brew install mongodb
 
