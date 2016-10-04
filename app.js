@@ -7,6 +7,7 @@ app.set("port", 3001);
 app.use(function (req, res, next) {
 
     console.log(req.method, req.url);
+    
     var allowedOrigins = ['http://localhost:3000', 'http://localhost:8080'];
     var origin = req.headers.origin;
     if (allowedOrigins.indexOf(origin) > -1) {
