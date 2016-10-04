@@ -18,10 +18,10 @@
 # open new cmd/terminal    
 # make sure the current directory is /mean2
 
-####import
+##import:
 mongoimport --db tourOfHeroes --collection heroes --jsonArray "server/heroes.json" 
 mongoimport --db tourOfHeroes --collection heroes --jsonArray "dump/heroes.json" 
 
-####export
+##export:
 mongoexport --db tourOfHeroes --collection heroes --jsonArray --pretty --out dump/heroes.json
 
