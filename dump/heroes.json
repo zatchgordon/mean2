@@ -1,0 +1,71 @@
+[{
+	"_id": {
+		"$oid": "57f3b3684bfeed9432253862"
+	},
+	"id": 11,
+	"name": "Mr. Zac"
+},
+{
+	"_id": {
+		"$oid": "57f3b3684bfeed9432253863"
+	},
+	"id": 14,
+	"name": "Celeritas"
+},
+{
+	"_id": {
+		"$oid": "57f3b3684bfeed9432253864"
+	},
+	"id": 13,
+	"name": "Bombasto"
+},
+{
+	"_id": {
+		"$oid": "57f3b3684bfeed9432253865"
+	},
+	"id": 15,
+	"name": "Magneta"
+},
+{
+	"_id": {
+		"$oid": "57f3b3684bfeed9432253866"
+	},
+	"id": 16,
+	"name": "RubberMan"
+},
+{
+	"_id": {
+		"$oid": "57f3b3684bfeed9432253867"
+	},
+	"id": 17,
+	"name": "Dynama"
+},
+{
+	"_id": {
+		"$oid": "57f3b3684bfeed9432253868"
+	},
+	"id": 18,
+	"name": "Dr IQ"
+},
+{
+	"_id": {
+		"$oid": "57f3b3684bfeed9432253869"
+	},
+	"id": 19,
+	"name": "Magma"
+},
+{
+	"_id": {
+		"$oid": "57f3b3684bfeed943225386a"
+	},
+	"id": 20,
+	"name": "Tornado"
+},
+{
+	"_id": {
+		"$oid": "57f3b3684bfeed943225386b"
+	},
+	"id": 12,
+	"name": "Polo"
+}]
+
