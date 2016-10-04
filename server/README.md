@@ -2,10 +2,10 @@
 #install mongo
 ##windows: 
     open cmd prompt
-    run powershel: powershell
-    install scoop: iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
-    allow permissions: set-executionpolicy unrestricted -s cu
-    install mongo: scoop install mongodb
+    run powershel: `powershell`
+    install scoop: `iex (new-object net.webclient).downloadstring('https://get.scoop.sh')`
+    allow permissions: `set-executionpolicy unrestricted -s cu`
+    install mongo: `scoop install mongodb`
     close and reopen cmd prompt
 ## mac: 
     open terminal
@@ -19,9 +19,10 @@
 # make sure the current directory is /mean2
 
 ##import:
-mongoimport --db tourOfHeroes --collection heroes --jsonArray "server/heroes.json" 
-mongoimport --db tourOfHeroes --collection heroes --jsonArray "dump/heroes.json" 
+```mongoimport --db tourOfHeroes --collection heroes --jsonArray "server/heroes.json"
+or
+mongoimport --db tourOfHeroes --collection heroes --jsonArray "dump/heroes.json"```
 
 ##export:
-mongoexport --db tourOfHeroes --collection heroes --jsonArray --pretty --out dump/heroes.json
+`mongoexport --db tourOfHeroes --collection heroes --jsonArray --pretty --out dump/heroes.json`
 
