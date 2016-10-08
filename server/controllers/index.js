@@ -1,4 +1,4 @@
-var heroes = require("../controllers/heroes.controllers.js")
+var heroes = require("./heroes.controllers.js")
 
 module.exports = {
     heroes: heroes
